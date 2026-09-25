@@ -3,6 +3,10 @@
 **A complete first-person shooter in a 79 KB `.exe`.**
 Three levels, four weapons, four kinds of drones, a boss fight, music, sound effects, and a rescue at the end. No installer, and no downloads beyond the game file itself.
 
+## [⬇️ Download SaveElon.exe (79 KB)](https://github.com/PariPariKai/save-elon/releases/latest/download/SaveElon.exe)
+
+Windows 10 / 11. Download, run, play. Nothing to install.
+
 ![Title screen](screenshots/title.jpg)
 
 > Grok was built to be maximally truth-seeking.
@@ -24,7 +28,7 @@ Three levels, four weapons, four kinds of drones, a boss fight, music, sound eff
 
 ## Play
 
-1. Download `SaveElon.exe` from [Releases](../../releases).
+1. Download [**SaveElon.exe**](https://github.com/PariPariKai/save-elon/releases/latest/download/SaveElon.exe) (also on the [Releases](../../releases) page).
 2. Run it. That's it.
 
 Windows SmartScreen may say *"Windows protected your PC"*. The game is tiny, brand new and not code-signed, so nobody has "vouched" for it yet. Click **More info → Run anyway**. You can also skip the download entirely and build the exe yourself from the source in this repo (see below). It takes about 5 seconds, and everything needed already comes with Windows.

@@ -15,8 +15,10 @@ Three levels, four weapons, four kinds of drones, a boss fight, music, sound eff
 
 | | |
 |---|---|
-| ![Level 1](screenshots/catacombs.jpg) | ![Boss fight](screenshots/grok-boss-fight.jpg) |
-| ![Elon](screenshots/elon.jpg) | ![Results](screenshots/results.jpg) |
+| ![Level 1: Data Catacombs](screenshots/level1.jpg) | ![Level 2: GPU Foundry](screenshots/level2.jpg) |
+| **Level 1: Data Catacombs** | **Level 2: GPU Foundry** |
+| ![Level 3: Grok's Sanctum](screenshots/level3.jpg) | ![The door to Grok's hall](screenshots/grok-door.jpg) |
+| **Level 3: Grok's Sanctum** | **The door to Grok's hall. What's behind it? Play and see.** |
 
 *Fun fact: every screenshot on this page is bigger than the game itself.*
 

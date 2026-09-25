@@ -3,9 +3,7 @@
 **A complete first-person shooter in a 79 KB `.exe`.**
 Three levels, four weapons, four kinds of drones, a boss fight, music, sound effects, and a rescue at the end. No installer, and no downloads beyond the game file itself.
 
-## [⬇️ Download SaveElon.exe (79 KB)](https://github.com/PariPariKai/save-elon/releases/latest/download/SaveElon.exe)
-
-Windows 10 / 11. Download, run, play. Nothing to install.
+**Get it in 10 seconds:** [download the ZIP](../../archive/refs/heads/main.zip), unzip it, and double-click **`build.bat`**. Your own freshly built `SaveElon.exe` appears in the `bin` folder. Windows 10 / 11, nothing to install. [More below ↓](#play)
 
 ![Title screen](screenshots/title.jpg)
 
@@ -28,10 +26,13 @@ Windows 10 / 11. Download, run, play. Nothing to install.
 
 ## Play
 
-1. Download [**SaveElon.exe**](https://github.com/PariPariKai/save-elon/releases/latest/download/SaveElon.exe) (also on the [Releases](../../releases) page).
-2. Run it. That's it.
+There is no ready-made exe to download on purpose: you build the game yourself from the source code in this repo. It's easy, and everything it needs already comes with Windows.
 
-Windows SmartScreen may say *"Windows protected your PC"*. The game is tiny, brand new and not code-signed, so nobody has "vouched" for it yet. Click **More info → Run anyway**. You can also skip the download entirely and build the exe yourself from the source in this repo (see below). It takes about 5 seconds, and everything needed already comes with Windows.
+1. Click **Code → Download ZIP** at the top of this page (or [here](../../archive/refs/heads/main.zip)) and unzip it anywhere.
+2. Double-click **`build.bat`**. After a few seconds a folder opens with `SaveElon.exe` in it. (If Windows asks whether to run a file downloaded from the internet, choose **Run**, or **More info → Run anyway**.)
+3. Run `SaveElon.exe` and save Elon.
+
+Why this way? You can see exactly what goes into the exe, since the whole game is the code on this page and no hidden binaries are involved. The build uses `csc.exe`, the C# compiler that ships with every Windows (`C:\Windows\Microsoft.NET\Framework644.0.30319`), so nothing is downloaded or installed.
 
 ## Why?
 
@@ -103,9 +104,9 @@ Linux and macOS are not supported (Wine might work, but nobody has tried).
 
 Tips: kill every drone to open the portal. On the last level, the last drone drops the key card to Grok's arena. And please don't shoot Elon.
 
-## Build it yourself
+## Building from the command line
 
-The C# compiler ships with Windows, so nothing needs to be downloaded:
+`build.bat` just runs this script, which you can also run directly:
 
 ```
 powershell -ExecutionPolicy Bypass -File build.ps1
@@ -126,6 +127,7 @@ This gives you:
 | `src/Gfx.cs` | OpenGL setup and text rendering |
 | `src/Native.cs` | Windows / OpenGL function imports |
 | `packer/Stub.cs` | the loader that unpacks the game into memory |
+| `build.ps1`, `build.bat` | the build script and a double-click shortcut for it |
 
 ## Credits
 

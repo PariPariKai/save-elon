@@ -8,7 +8,7 @@ if errorlevel 1 (
     pause
     exit /b 1
 )
+copy /y "%~dp0bin\SaveElon.exe" "%~dp0SaveElon.exe" > nul
 echo.
-echo Done! Your game is ready: bin\SaveElon.exe
-start "" explorer "%~dp0bin"
+echo Done! SaveElon.exe is now right next to build.bat. Have fun!
 pause

@@ -1,9 +1,9 @@
 # Save Elon!
 
 **A complete first-person shooter in a 79 KB `.exe`.**
-Three levels, four weapons, four kinds of drones, a boss fight, music, sound effects, and a rescue at the end. No installer, and no downloads beyond the game file itself.
+Three levels, four weapons, four kinds of drones, a boss fight, music, sound effects, and a rescue at the end. No installer, and nothing to download except the source code itself.
 
-**Get it in 10 seconds:** [download the ZIP](../../archive/refs/heads/main.zip), unzip it, and double-click **`build.bat`**. Your own freshly built `SaveElon.exe` appears in the `bin` folder. Windows 10 / 11, nothing to install. [More below ↓](#play)
+**Get it:** download the ZIP, double-click **`build.bat`**, play. Or just ask an AI agent to check and build it for you. Windows 10 / 11, nothing to install. [How ↓](#play)
 
 ![Title screen](screenshots/title.jpg)
 
@@ -26,13 +26,25 @@ Three levels, four weapons, four kinds of drones, a boss fight, music, sound eff
 
 ## Play
 
-There is no ready-made exe to download on purpose: you build the game yourself from the source code in this repo. It's easy, and everything it needs already comes with Windows.
+> **⚠️ About antivirus:** some antivirus programs may complain about the game. That's because it loads itself straight into memory, skipping the usual way programs start. Viruses do that too, so scanners get nervous. Here it's simply how the engine squeezes a whole game into 79 KB. All the code is right here on this page, so you can check it yourself.
+
+There's no ready-made exe to download: you build the game from the source in a few seconds. Two easy ways:
+
+### 1. Double-click `build.bat`
 
 1. Click **Code → Download ZIP** at the top of this page (or [here](../../archive/refs/heads/main.zip)) and unzip it anywhere.
-2. Double-click **`build.bat`**. After a few seconds a folder opens with `SaveElon.exe` in it. (If Windows asks whether to run a file downloaded from the internet, choose **Run**, or **More info → Run anyway**.)
-3. Run `SaveElon.exe` and save Elon.
+2. Double-click **`build.bat`**. If Windows asks whether to run a file downloaded from the internet, choose **Run** (or **More info → Run anyway**).
+3. A few seconds later **`SaveElon.exe`** appears right next to it. Run it and save Elon!
 
-Why this way? You can see exactly what goes into the exe, since the whole game is the code on this page and no hidden binaries are involved. The build uses `csc.exe`, the C# compiler that ships with every Windows (`C:\Windows\Microsoft.NET\Framework644.0.30319`), so nothing is downloaded or installed.
+Nothing gets downloaded or installed: the build uses `csc.exe`, the C# compiler that ships with every Windows.
+
+### 2. Ask an AI to do it for you
+
+Give the link to this page to Claude, Codex or any other AI coding agent and ask something like:
+
+> *Check the source code of this game for anything suspicious, then build it and run it for me: https://github.com/PariPariKai/save-elon*
+
+Easy!
 
 ## Why?
 
@@ -106,7 +118,7 @@ Tips: kill every drone to open the portal. On the last level, the last drone dro
 
 ## Building from the command line
 
-`build.bat` just runs this script, which you can also run directly:
+`build.bat` runs this script and then copies `binSaveElon.exe` next to itself. You can also run the script directly:
 
 ```
 powershell -ExecutionPolicy Bypass -File build.ps1

@@ -118,7 +118,7 @@ Tips: kill every drone to open the portal. On the last level, the last drone dro
 
 ## Building from the command line
 
-`build.bat` runs this script and then copies `binSaveElon.exe` next to itself. You can also run the script directly:
+`build.bat` runs this script and then copies `bin\SaveElon.exe` next to itself. You can also run the script directly:
 
 ```
 powershell -ExecutionPolicy Bypass -File build.ps1
